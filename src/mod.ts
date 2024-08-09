@@ -1,1 +1,1 @@
-export { add } from './add.ts';
+export { findReplaceInDir, findReplaceInPath } from './findReplaceInDir.ts';
