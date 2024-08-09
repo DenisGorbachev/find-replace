@@ -1,4 +1,4 @@
-import { walk, type WalkOptions } from "https://deno.land/std@0.224.0/fs/mod.ts"
+import { walk, type WalkOptions } from "jsr:@std/fs@0.224.0"
 
 export async function findReplaceInDir(needle: string | RegExp, replacement: string, dir: string) {
   const options: WalkOptions = { includeDirs: false }
