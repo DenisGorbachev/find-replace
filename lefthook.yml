@@ -1,0 +1,15 @@
+assert_lefthook_installed: true
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      run: deno fmt
+      stage_fixed: true
+    lint-code:
+      run: deno lint
+    test-code:
+      run: deno test
+commit-msg:
+  commands:
+    "lint commit message":
+      run: commitlint --edit "$1"

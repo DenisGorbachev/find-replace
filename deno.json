@@ -10,19 +10,13 @@
     "noUncheckedIndexedAccess": true
   },
   "fmt": {
-    "files": {
-      "include": ["./src/**/*.ts"],
-      "exclude": []
-    },
-    "options": {
-      "semiColons": false,
-      "lineWidth": 100500
-    }
+    "include": ["./src/**/*.ts"],
+    "exclude": [],
+    "semiColons": false,
+    "lineWidth": 100500
   },
   "test": {
-    "files": {
-      "include": ["./tests/"],
-      "exclude": []
-    }
+    "include": ["./tests/"],
+    "exclude": []
   }
 }
