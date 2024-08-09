@@ -1,7 +1,13 @@
 {
+  "name": "@fasterface/find-replace",
+  "version": "1.0.0",
+  "exports": "./src/mod.ts",
   "compilerOptions": {
-    "allowJs": false,
-    "strict": true
+    "strict": true,
+    "noErrorTruncation": true,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true
   },
   "fmt": {
     "files": {
@@ -9,29 +15,9 @@
       "exclude": []
     },
     "options": {
-      "indentWidth": 4,
-      "semiColons": true,
-      "singleQuote": true,
-      "useTabs": true
+      "semiColons": false,
+      "lineWidth": 100500
     }
-  },
-  "imports": {
-    "std/": "https://deno.land/std@0.61.0/"
-  },
-  "lint": {
-    "files": {
-      "include": ["./src/**/*.ts"],
-      "exclude": []
-    },
-    "rules": {
-      "include": ["ban-untagged-todo"],
-      "exclude": ["no-unused-vars"],
-      "tags": ["recommended"]
-    }
-  },
-  "tasks": {
-    "format": "deno fmt ./src/",
-    "start": "deno run --unstable mod.ts"
   },
   "test": {
     "files": {

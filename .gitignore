@@ -1,0 +1,12 @@
+/node_modules
+
+/coverage
+
+.env
+*.orig
+*.pyc
+*.swp
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
